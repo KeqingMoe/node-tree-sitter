@@ -31,7 +31,7 @@ Build artifacts are in the `prebuilds` directory.
 ## Installation
 
 ```sh
-npm install tree-sitter
+npm install @keqingmoe/tree-sitter
 ```
 
 ## Basic Usage
@@ -53,7 +53,7 @@ You can also develop a new grammar by using the [Tree-sitter CLI][cli] and follo
 Once you've got your grammar, create a parser with that grammar.
 
 ```javascript
-const Parser = require('tree-sitter');
+const Parser = require('@keqingmoe/tree-sitter');
 const JavaScript = require('tree-sitter-javascript');
 
 const parser = new Parser();
