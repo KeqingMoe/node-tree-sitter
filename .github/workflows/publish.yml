@@ -49,7 +49,7 @@ jobs:
           mkdir -p dist
           for dir in prebuilds/*/; do
             platform=$(basename "$dir")
-            cp "$dir/tree-sitter.node" "dist/tree-sitter-$platform.node"
+            cp "$dir/@keqingmoe+tree-sitter.node" "dist/@keqingmoe+tree-sitter-$platform.node"
           done
           ls -l dist
 

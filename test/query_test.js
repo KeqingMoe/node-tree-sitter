@@ -1,4 +1,4 @@
-/** @type {typeof import('tree-sitter')} */
+/** @type {typeof import('@keqingmoe/tree-sitter')} */
 const Parser = require("../index.js");
 
 const C = require("tree-sitter-c");
@@ -280,7 +280,7 @@ describe("Query", () => {
       `);
 
       /**
-       * @param {import('tree-sitter').Tree} tree
+       * @param {import('@keqingmoe/tree-sitter').Tree} tree
        * @param {string} queryText
        * @param {number} expectedCount
        */
@@ -1100,8 +1100,8 @@ if (d) {
 });
 
 /**
-  * @param {import('tree-sitter').Tree} tree
-  * @param {import('tree-sitter').QueryMatch[]} matches
+  * @param {import('@keqingmoe/tree-sitter').Tree} tree
+  * @param {import('@keqingmoe/tree-sitter').QueryMatch[]} matches
   */
 function formatMatches(tree, matches) {
   return matches.map(({ pattern, captures }) => ({
@@ -1111,8 +1111,8 @@ function formatMatches(tree, matches) {
 }
 
 /**
-  * @param {import('tree-sitter').Tree} tree
-  * @param {(import('tree-sitter').QueryCapture & { text?: string })[]} captures
+  * @param {import('@keqingmoe/tree-sitter').Tree} tree
+  * @param {(import('@keqingmoe/tree-sitter').QueryCapture & { text?: string })[]} captures
   */
 function formatCaptures(tree, captures) {
   return captures.map((c) => {

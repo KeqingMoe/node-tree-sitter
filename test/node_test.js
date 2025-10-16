@@ -1,4 +1,4 @@
-/** @type {typeof import('tree-sitter')} */
+/** @type {typeof import('@keqingmoe/tree-sitter')} */
 const Parser = require("../index.js");
 
 const C = require('tree-sitter-c');
@@ -21,7 +21,7 @@ const JSON_EXAMPLE = `
 `
 
 /**
- * @param {import('tree-sitter').Tree} tree
+ * @param {import('@keqingmoe/tree-sitter').Tree} tree
  */
 function getAllNodes(tree) {
   const result = [];
@@ -43,7 +43,7 @@ function getAllNodes(tree) {
 }
 
 describe("Node", () => {
-  /** @type {import('tree-sitter')} */
+  /** @type {import('@keqingmoe/tree-sitter')} */
   let parser;
 
   beforeEach(() => {

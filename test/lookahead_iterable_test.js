@@ -1,4 +1,4 @@
-/** @type {typeof import('tree-sitter')} */
+/** @type {typeof import('@keqingmoe/tree-sitter')} */
 const Parser = require("../index.js");
 const Rust = require("tree-sitter-rust");
 const assert = require('node:assert');

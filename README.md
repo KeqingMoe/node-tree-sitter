@@ -1,10 +1,32 @@
 # Node Tree-sitter
 
-[![CI][ci]](https://github.com/tree-sitter/node-tree-sitter/actions/workflows/ci.yml)
+[![CI][ci]](https://github.com/KeqingMoe/node-tree-sitter/actions/workflows/ci.yml)
 [![npm][npm]](https://npmjs.com/package/tree-sitter)
 [![docs][docs]](https://tree-sitter.github.io/node-tree-sitter)
 
 This module provides Node.js bindings to the [tree-sitter] parsing library.
+
+**Note**: This is a community-maintained fork of the original package.
+
+## Differences from original
+
+- `.github/workflows/docs.yml` is not used.
+- ["Compiling locally" section](#compiling-locally) in README.md
+- Reverted the [commit 079fe03](https://github.com/tree-sitter/node-tree-sitter/commit/079fe035fdfb40612f28b49c933348f312c245eb) to fix build issues.
+- Relaxed the interface to adapt to the new version of tree-sitter. For more information, see [feat(bindings): drop language name from node](https://github.com/tree-sitter/tree-sitter/commit/36616893892f98614138fa8f44e4b8550c6a61f6).
+
+## Compiling locally
+
+```sh
+git clone https://github.com/KeqingMoe/node-tree-sitter.git
+cd node-tree-sitter
+git submodule init
+git submodule update
+npm i
+npm run build
+```
+
+Build artifacts are in the `prebuilds` directory.
 
 ## Installation
 
@@ -118,10 +140,10 @@ It's recommended that you read the [Tree-sitter documentation][usage docs] on us
 of the API. Once you're comfortable with the basics, you can explore the [full API documentation](https://tree-sitter.github.io/node-tree-sitter),
 which should map closely to the C API, though there are some differences.
 
-[ci]: https://img.shields.io/github/actions/workflow/status/tree-sitter/node-tree-sitter/ci.yml?logo=github&label=CI
+[ci]: https://img.shields.io/github/actions/workflow/status/KeqingMoe/node-tree-sitter/ci.yml?logo=github&label=CI
 [cli]: https://github.com/tree-sitter/tree-sitter/tree/master/cli
 [docs]: https://img.shields.io/badge/docs-website-blue
-[npm]: https://img.shields.io/npm/v/tree-sitter?logo=npm
+[npm]: https://img.shields.io/npm/v/@KeqingMoe/tree-sitter?logo=npm
 [grammars]: https://github.com/tree-sitter/tree-sitter/wiki/List-of-parsers
 [javascript]: http://github.com/tree-sitter/tree-sitter-javascript
 [ts docs]: https://tree-sitter.github.io/tree-sitter/creating-parsers

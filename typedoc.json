@@ -12,7 +12,7 @@
   "includeVersion": true,
   "searchInComments": true,
   "navigationLinks": {
-    "GitHub": "https://github.com/tree-sitter/node-tree-sitter"
+    "GitHub": "https://github.com/KeqingMoe/node-tree-sitter"
   },
   "visibilityFilters": {
     "protected": false,

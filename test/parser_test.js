@@ -1,4 +1,4 @@
-/** @type {typeof import('tree-sitter')} */
+/** @type {typeof import('@keqingmoe/tree-sitter')} */
 const Parser = require("../index.js");
 const HTML = require('tree-sitter-html');
 const JavaScript = require('tree-sitter-javascript');
@@ -8,7 +8,7 @@ const assert = require('node:assert');
 const { afterEach, beforeEach, describe, it } = require('node:test');
 
 describe("Parser", () => {
-  /** @type {import('tree-sitter')} */
+  /** @type {import('@keqingmoe/tree-sitter')} */
   let parser;
 
   beforeEach(() => {

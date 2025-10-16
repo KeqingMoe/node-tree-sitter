@@ -1,30 +1,20 @@
 {
-  "name": "tree-sitter",
-  "version": "0.25.0",
+  "name": "@keqingmoe/tree-sitter",
+  "version": "0.26.0",
   "description": "Node.js bindings to the Tree-sitter parsing library",
-  "repository": "http://github.com/tree-sitter/node-tree-sitter",
+  "repository": "http://github.com/KeqingMoe/node-tree-sitter",
   "publishConfig": {
     "access": "public"
   },
   "license": "MIT",
   "author": {
-    "name": "Max Brunsfeld",
-    "email": "maxbrunsfeld@gmail.com"
+    "name": "Teru Shigure",
+    "email": "me@keqing.moe"
   },
-  "maintainers": [
-    {
-      "name": "Amaan Qureshi",
-      "email": "amaanq12@gmail.com"
-    }
-  ],
   "contributors": [
     {
-      "name": "Segev Finer",
-      "email": "segev208@gmail.com"
-    },
-    {
-      "name": "Boris Verkhovskiy",
-      "email": "boris.verk@gmail.com"
+      "name": "Max Brunsfeld",
+      "email": "maxbrunsfeld@gmail.com"
     }
   ],
   "main": "index.js",

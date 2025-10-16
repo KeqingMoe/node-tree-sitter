@@ -1,4 +1,4 @@
-/** @type {typeof import('tree-sitter')} */
+/** @type {typeof import('@keqingmoe/tree-sitter')} */
 const Parser = require("../index.js");
 const JavaScript = require('tree-sitter-javascript');
 const Rust = require('tree-sitter-rust');
@@ -6,7 +6,7 @@ const assert = require('node:assert');
 const { beforeEach, describe, it } = require('node:test');
 
 describe("Tree", () => {
-  /** @type {import('tree-sitter')} */
+  /** @type {import('@keqingmoe/tree-sitter')} */
   let parser;
 
   beforeEach(() => {
@@ -18,10 +18,10 @@ describe("Tree", () => {
     /** @type {string} */
     let input;
 
-    /** @type {import('tree-sitter').Edit} */
+    /** @type {import('@keqingmoe/tree-sitter').Edit} */
     let edit;
 
-    /** @type {import('tree-sitter').Tree} */
+    /** @type {import('@keqingmoe/tree-sitter').Tree} */
     let tree;
 
     it('updates the positions of existing nodes', () => {
@@ -612,7 +612,7 @@ fn main() {
 });
 
 /**
-  * @param {import('tree-sitter').TreeCursor} cursor
+  * @param {import('@keqingmoe/tree-sitter').TreeCursor} cursor
   * @param {Object} params
   */
 function assertCursorState(cursor, params) {
@@ -643,7 +643,7 @@ function assertCursorState(cursor, params) {
  * @param {number} lengthRemoved
  * @param {string} newText
  *
- * @returns {[string, import('tree-sitter').Edit]}
+ * @returns {[string, import('@keqingmoe/tree-sitter').Edit]}
  */
 function spliceInput(input, startIndex, lengthRemoved, newText) {
   const oldEndIndex = startIndex + lengthRemoved;
