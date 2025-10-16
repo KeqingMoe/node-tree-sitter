@@ -11,3 +11,5 @@ tree_sitter
 node_modules
 .vagrant
 prebuilds
+.DS_Store
+secret
