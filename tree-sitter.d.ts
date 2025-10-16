@@ -1029,8 +1029,6 @@ declare module "tree-sitter" {
 
     /** Information about a language */
     interface Language {
-      /** The name of the language */
-      name: string;
       /** The inner language object */
       language: Language;
       /** The node type information of the language */
