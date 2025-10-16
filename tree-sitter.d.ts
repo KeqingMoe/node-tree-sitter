@@ -1,5 +1,5 @@
 /** @module */
-declare module "tree-sitter" {
+declare module "@keqingmoe/tree-sitter" {
   class Parser {
     /**
      * Parse UTF8 text into a syntax tree.
