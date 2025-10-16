@@ -1030,7 +1030,7 @@ declare module "@keqingmoe/tree-sitter" {
     /** Information about a language */
     interface Language {
       /** The inner language object */
-      language: Language;
+      language: unknown;
       /** The node type information of the language */
       nodeTypeInfo: NodeInfo[];
     }
